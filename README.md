@@ -3,6 +3,15 @@
 [Lien repo TP2 - Hotel](https://github.com/Hugoreoo/tp2-hotel).  
 [Lien repo TP3 - EasyStore](https://github.com/Hugoreoo/tp3-easystore).
 
+
+# Explication du makefile
+
+Ce script est un fichier Makefile générique pour la gestion automatique des dépendances d'un projet en C++. Il utilise le compilateur g++ (mais peut être facilement modifié pour utiliser clang++). 
+
+Il définit également les fichiers sources (SRCS) à compiler, les fichiers objets (OBJS) résultants et le nom de l'exécutable cible (TARGET). Il y a des cibles pour nettoyer les fichiers objets (clean), supprimer l'exécutable (mrproper) et lancer l'exécutable (exe). Il y a également une cible pour inclure les dépendances (include).
+
+En utilisant ce fichier Makefile, on peut compiler et exécuter facilement votre projet en utilisant les commandes make, make clean, make mrproper et make exe. Il gère également automatiquement les dépendances entre les fichiers, ce qui signifie que si on modifie un fichier source, seuls les fichiers qui dépendent de celui-ci seront recompilés.
+
 # Ce qu'il nous manque à acquérir
 
 Par exemple les fichiers de configuration pourraient améliorer notre programme en permettant de définir les paramètres de l'application sans avoir à recompiler le code.
